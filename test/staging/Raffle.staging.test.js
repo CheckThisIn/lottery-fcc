@@ -3,7 +3,7 @@
 // 2. Deploy our contract using the SubId
 // 3. Register the contract with Chainlink VRF and it's SubId | 0x6e5551801e2cF1263594C9C11bd6106EA4Fc53D6
 // 4. Register the contract with Chainlink Keepers as CUSTOM LOGIC (!) | Recommended: 8 LINK funding | https://keepers.chain.link/
-// 5. Run staging tests
+// 5. Run staging tests | yarn hardhat test --network rinkeby
 
 const { assert, expect } = require("chai")
 const { getNamedAccounts, deployments, ethers, network } = require("hardhat")

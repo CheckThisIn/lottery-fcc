@@ -6,6 +6,8 @@ const {
 } = require("../helper-hardhat-config")
 const { verify } = require("../utils/verify")
 
+// Remember: deploying a contract with an eth value greater than what we have in our Metamask wallet will result in the deployment failing!
+// FUND_AMOUNT is ONLY used on developmentChains
 const FUND_AMOUNT = "1000000000000000000000"
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
