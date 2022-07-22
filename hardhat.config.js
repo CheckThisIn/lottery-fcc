@@ -5,8 +5,7 @@ require("solidity-coverage")
 require("hardhat-gas-reporter")
 require("hardhat-contract-sizer")
 require("dotenv").config()
-// TEST the dotenv !
-console.log(process.env)
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -110,6 +109,6 @@ module.exports = {
         ],
     },
     mocha: {
-        timeout: 500000, // 500 seconds max for running tests
+        timeout: 500000, // 500 seconds max for running tests - Result: "Done in 486.91s."
     },
 }
